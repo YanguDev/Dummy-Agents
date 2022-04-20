@@ -53,7 +53,7 @@ public class Agent : MonoBehaviour
         Invoke("MoveToRandomPosition", Random.Range(minMovingTime, maxMovingTime));
     }
 
-    private void GetHurt(){
+    public void GetHurt(){
         healthPoints--;
         if(onAgentHealthChanged != null)
             onAgentHealthChanged.Invoke();
@@ -78,8 +78,10 @@ public class Agent : MonoBehaviour
             StartCoroutine(Fall(AgentState.FallenOnBack));
             
             // Since both agents were standing, make sure the other agent also falls on back
-            if(!initiatedByAnotherAgent)
+            if(!initiatedByAnotherAgent){
+                attackingAgent.GetHurt();
                 attackingAgent.Fall(gameObject, true);
+            }
 
         }else{
             animator.SetTrigger("FallOnFront");
