@@ -24,3 +24,9 @@ Agents lose health on falling and can disappear because of that. It's good to ke
 Each Agent is unique - they have different hair color and names. Selecting random name is easy, just find top 100 baby names on Google and put them in a static list!
 
 Agents model was made in [MagicaVoxel](https://ephtracy.github.io/), then rigged and animated in Blender.
+
+## To Do
+- Dust particles on fall
+- Accurate colliders for fallen agents
+- Death animation
+- Smoother camera zoom and movement
