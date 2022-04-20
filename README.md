@@ -1,6 +1,6 @@
 # Dummy Agents
 
-- **Engine:** Unity 2020.3.33f1
+- **Engine:** [Unity](https://unity.com/) 2020.3.33f1
 - **Language:** C#
 - **Target Platforms:** PC
 
@@ -23,7 +23,7 @@ Agents lose health on falling and can disappear because of that. It's good to ke
 
 Each Agent is unique - they have different hair color and names. Selecting random name is easy, just find top 100 baby names on Google and put them in a static list!
 
-Agents model was made in [MagicaVoxel](https://ephtracy.github.io/), then rigged and animated in Blender.
+Agents model was made in [MagicaVoxel](https://ephtracy.github.io/), then rigged and animated in [Blender](https://www.blender.org/).
 
 ## To Do
 - Dust particles on fall
